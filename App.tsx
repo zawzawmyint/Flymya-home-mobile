@@ -8,8 +8,10 @@
  * @format
  */
 
+import {Stack, Input} from 'native-base';
 import React, {type PropsWithChildren} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -77,6 +79,15 @@ const App = () => {
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
+          <Button title="Test" onPress={() => console.log('hello world')} />
+          <Stack space={4} w="75%" maxW="300px" mx="auto">
+            <Input size="xs" placeholder="xs Input" />
+            <Input size="sm" placeholder="sm Input" />
+            <Input size="md" placeholder="md Input" />
+            <Input size="lg" placeholder="lg Input" />
+            <Input size="xl" placeholder="xl Input" />
+            <Input size="2xl" placeholder="2xl Input" />
+          </Stack>
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -7,12 +7,15 @@ import App from './App';
 import {name as appName} from './app.json';
 import {TailwindProvider} from 'tailwind-rn';
 import utilities from './tailwind.json';
+import {NativeBaseProvider} from 'native-base';
 
 const Main = () => {
   return (
-    <TailwindProvider utilities={utilities}>
-      <App />
-    </TailwindProvider>
+    <NativeBaseProvider>
+      <TailwindProvider utilities={utilities}>
+        <App />
+      </TailwindProvider>
+    </NativeBaseProvider>
   );
 };
 
