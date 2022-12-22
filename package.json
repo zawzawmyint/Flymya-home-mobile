@@ -12,10 +12,13 @@
     "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.1",
+    "@react-navigation/native-stack": "^6.9.7",
     "native-base": "^3.4.25",
     "react": "18.1.0",
     "react-native": "0.70.6",
-    "react-native-safe-area-context": "3.3.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.18.2",
     "react-native-svg": "12.1.1",
     "tailwind-rn": "^4.2.0"
   },
