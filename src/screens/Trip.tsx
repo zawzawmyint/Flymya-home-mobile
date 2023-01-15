@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {SafeAreaView} from 'react-native-safe-area-context';
 
 function HomeScreen() {
   return (

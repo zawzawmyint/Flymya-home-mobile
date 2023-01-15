@@ -8,7 +8,7 @@ import {
   Image,
   Badge,
 } from 'native-base';
-import React, {type PropsWithChildren} from 'react';
+import React from 'react';
 
 import {SafeAreaView, StyleSheet} from 'react-native';
 // import Icon from 'react-native-vector-icons/FontAwesome';
@@ -18,7 +18,6 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 
 import {useTailwind} from 'tailwind-rn';
-import Trip from './Trip';
 
 const Home = () => {
   const tw = useTailwind();
