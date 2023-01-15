@@ -8,38 +8,23 @@
  * @format
  */
 
-import {StyleSheet} from 'react-native';
-import SignUp from './src/screens/Auth/SignUp';
-import SignIn from './src/screens/Auth/SignIn';
-import AccountDetails from './src/screens/Auth/AccountDetails';
-import {ScrollView} from 'native-base';
-import ChangePassword from './src/screens/Auth/ChangePassword';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
-type RootStackParamList = {
-  AccountDetails: undefined;
-  ChangePassword: undefined;
-};
-
-const Stack = createNativeStackNavigator<RootStackParamList>();
+import {StyleSheet, TouchableWithoutFeedback} from 'react-native';
+import {Button} from 'react-native';
+import {ScrollView} from 'react-native';
+import Home from './src/screens/Home';
+import Trip from './src/screens/Trip';
+import {View} from 'native-base';
+import ButtonPage from './src/screens/Button';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      {/* <SignIn /> */}
-      {/* <SignUp /> */}
-      {/* <AccountDetails /> */}
-      {/* <ChangePassword /> */}
-      <Stack.Navigator>
-        <Stack.Screen
-          name="AccountDetails"
-          component={AccountDetails}
-          options={{title: 'Account Details'}}
-        />
-        <Stack.Screen name="ChangePassword" component={ChangePassword} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <ScrollView>
+      <View height={'full'}>
+        <Home />
+        <Trip />
+        <ButtonPage />
+      </View>
+    </ScrollView>
   );
 };
 

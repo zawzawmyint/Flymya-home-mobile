@@ -1,5 +1,5 @@
 {
-  "name": "october_mobile",
+  "name": "flymya_mobile",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,14 +12,20 @@
     "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
   },
   "dependencies": {
+    "@react-navigation/material-top-tabs": "^6.5.2",
     "@react-navigation/native": "^6.1.1",
     "@react-navigation/native-stack": "^6.9.7",
+    "@types/react-native-vector-icons": "^6.4.13",
     "native-base": "^3.4.25",
+    "pod-install": "^0.1.38",
     "react": "18.1.0",
     "react-native": "0.70.6",
+    "react-native-pager-view": "^6.1.2",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.18.2",
     "react-native-svg": "12.1.1",
+    "react-native-tab-view": "^3.3.4",
+    "react-native-vector-icons": "^9.2.0",
     "tailwind-rn": "^4.2.0"
   },
   "devDependencies": {
